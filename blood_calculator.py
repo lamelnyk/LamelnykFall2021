@@ -9,12 +9,12 @@ def interface():
         print(type(choice))
         if choice == 9:
             keep_running = False 
+
         elif choice == 1:
             HDL_Driver()
-
-
         print(choice)
     return choice
+
 
 def HDL_Driver():
     HDL_value = hdl_input()
