@@ -13,14 +13,14 @@ def interface():
 
         elif choice == 1:
             HDL_Driver()
-        print(choice)
+           
 
         elif choice == 2:
             LDL_Driver()
-        print(choice)
-
-    return choice
-
+            
+    
+    print(choice)
+    return choice 
 
 def HDL_Driver():
     HDL_value = hdl_input()
@@ -50,15 +50,15 @@ def LDL_Driver():
     ldl_output(LDL_value, LDL_character)
 
 def ldl_input():
-    hdl_value = int(input(("Enter LDL value: ")))
+    ldl_value = int(input(("Enter LDL value: ")))
     return ldl_value
 
 def ldl_analysis(LDL_value):
     if LDL_value >= 130:
         return "Normal"
-    elif 130 <= HDL_value < 159:
+    elif 130 <= LDL_value < 159:
         return "Borderline High"
-    elif 160 <= HDL_value < 189:
+    elif 160 <= LDL_value < 189:
         return "High"
     else:
         return "Very High"
