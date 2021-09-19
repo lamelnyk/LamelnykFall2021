@@ -1,4 +1,4 @@
-ame: Pytest with Pycodestyle
+Name: Pytest with Pycodestyle
 
 on: [push, pull_request]
 
