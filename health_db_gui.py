@@ -54,7 +54,7 @@ def design_window():
     ttk.Radiobutton(root, text="A", variable=blood_letter_data,
                     value="A"). grid(column=0, row=3, sticky=tk.W)
     ttk.Radiobutton(root, text="B", variable=blood_letter_data,
-                    value="B"). grid(column=0, row=4,sticky=tk.W)
+                    value="B"). grid(column=0, row=4, sticky=tk.W)
     ttk.Radiobutton(root, text="AB", variable=blood_letter_data,
                     value="AB"). grid(column=0, row=5, sticky=tk.W)
     ttk.Radiobutton(root, text="O", variable=blood_letter_data,
@@ -64,11 +64,12 @@ def design_window():
     rh_data.set('-')
     rh_checkbox = ttk.Checkbutton(root, text="Rh Positive",
                                   variable=rh_data, onvalue="+",
-                                  offvalue="-") 
+                                  offvalue="-")
     rh_checkbox.grid(column=1, row=4)
 
     donation_center_data = tk.StringVar()
-    combo_box = ttk.Label(root, text="Nearest Donation Center").grid(column=2, row=0)
+    combo_box = ttk.Label(root, text="Nearest Donation Center").grid(column=2,
+                                                                     row=0)
     combo_box = ttk.Combobox(root, textvariable=donation_center_data)
     combo_box["values"] = ("Durham", "Raleigh", "High Point", "Apex")
     combo_box.state(["readonly"])
